@@ -32,8 +32,9 @@ export class CreatePageComponent implements OnInit {
         author: this.form.value.author,
         date: new Date(),
       }
+      
       this.posts.create(post).subscribe((res) => {
-        console.log('res',res);
+        
         
         this.form.reset()
       } )

@@ -16,7 +16,6 @@ export class PostsService {
     return this.http.post(`${environment.fbDbUrl}/posts.json`, post)
     .pipe(
       map((response: FbCreateResponse) => {
-        console.log('r',response);
         
         return {
           ...post,
@@ -27,5 +26,6 @@ export class PostsService {
         
       })
     )
+  
   }
 }
