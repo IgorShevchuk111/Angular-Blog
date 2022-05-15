@@ -9,6 +9,7 @@ import { EditPageComponent } from './edit-page/edit-page.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from '../shared/shared.module';
 import { AuthGuard } from './services/auth.guard';
+import { SearchPipe } from './search.pipe';
 
 
 
@@ -18,7 +19,8 @@ import { AuthGuard } from './services/auth.guard';
      LoginPageComponent,
      CreatePageComponent,
      DashboardPageComponent, 
-     EditPageComponent
+     EditPageComponent,
+      SearchPipe
     ],
 
   imports: [

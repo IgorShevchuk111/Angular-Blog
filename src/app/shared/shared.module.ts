@@ -12,7 +12,7 @@ import { QuillModule } from 'ngx-quill';
     QuillModule.forRoot()
   ],
   exports: [
-    QuillModule
+    QuillModule,
   ]
 })
 export class SharedModule { }
