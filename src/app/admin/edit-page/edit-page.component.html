@@ -17,7 +17,8 @@
     [ngClass]="{'invalid': this.form.get('text').invalid}"
     >
         <label >Content Post </label>
-        <quill-editor formControlName="text"></quill-editor>
+        <!-- <quill-editor formControlName="text"></quill-editor> -->
+        <input formControlName="text">
 
         <div class="validation"
             *ngIf="this.form.get('text').invalid"
@@ -48,8 +49,9 @@
 </form>
 
 <!-- <pre>{{form.get('title').errors | json}}</pre>  -->
-
-
+<!-- 
+// "ngx-quill": "^7.1.2",
+    // "quill": "^1.3.6", -->
 
 
 
